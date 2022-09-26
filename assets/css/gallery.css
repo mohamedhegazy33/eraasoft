@@ -1,0 +1,22 @@
+.gallery__container {
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.gallery {
+  background: var(--color-gb-second);
+}
+
+/* responsive */
+@media screen and (max-width: 992px) {
+  .gallery__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .gallery__container {
+    grid-template-columns: 1fr;
+  }
+}

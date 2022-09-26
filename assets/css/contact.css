@@ -1,0 +1,152 @@
+.contact__container {
+  background: var(--color-gb-second);
+  padding: 65px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 65px;
+  border-radius: 16px;
+  height: 480px;
+  margin-top: 115px !important ;
+  margin-bottom: 115px !important;
+}
+.contact__left {
+  background: var(--main-color);
+  border-radius: 16px;
+  padding: 50px;
+  position: relative;
+  bottom: 160px;
+}
+.contact__img {
+  width: 25px;
+}
+.contact__left h2 {
+  margin-bottom: 16px;
+  text-align: left;
+}
+.contact__left p {
+  font-size: 15px;
+  margin-bottom: 32px;
+}
+.contact__details li {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+.contact__details li a {
+  transition: var(--transition);
+}
+.contact__details li a:hover {
+  color: var(--color-gb-second);
+}
+.contact__img {
+  width: 200px;
+  margin-bottom: 32px;
+}
+.contact__social {
+  display: flex;
+  gap: 16px;
+  margin-top: 50px;
+}
+.contact__social li a {
+  transition: var(--transition);
+  background-color: var(--color-gb-second);
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 15px;
+}
+.contact__social li a:hover {
+  color: var(--main-color);
+}
+footer .newsletter__container {
+  bottom: 50%;
+}
+/* form */
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 65px;
+  gap: 20px;
+}
+.contact__form button {
+  width: max-content;
+  cursor: pointer;
+}
+.form__name {
+  display: flex;
+  gap: 16px;
+}
+.contact__form input[type="text"] {
+  width: 50%;
+}
+.contact__form input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  background: var(--color-gb);
+  color: var(--color-white);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--main-color);
+}
+.contact__form input::placeholder,
+textarea::placeholder {
+  color: var(--color-white);
+}
+
+.map__container iframe {
+  width: 100%;
+  height: 450px;
+}
+
+footer .newsletter__container {
+  bottom: 75%;
+}
+
+footer .footer__container {
+  margin-top: 100px;
+}
+/* responsive */
+@media screen and (max-width: 992px) {
+  .contact {
+    padding: 0;
+  }
+  .contact__left {
+    width: auto;
+    padding: 25px;
+    bottom: 0;
+  }
+  .contact__container {
+    gap: 25px;
+    margin-top: 50px;
+    height: auto;
+    padding: 25px;
+  }
+  .contact__form {
+    margin-right: 25px;
+    align-self: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact__container {
+    margin-top: 0;
+    padding: 0;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .contact__form {
+    margin: 0 25px 50px;
+  }
+  .form__name {
+    flex-direction: column;
+  }
+  .contact__form input[type="text"] {
+    width: 100%;
+  }
+  footer .newsletter__container {
+    bottom: 85%;
+  }
+  .map {
+    padding: 50px 0;
+  }
+}
